@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Registration form example</title>
+<style type="text/css">
+        body
+        {
+        margin: 0;
+        padding: 0;
+        }
+        
+        section
+        {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        section .contentBX
+        {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0,51,78,1);
+            width:160%;
+            height:534px;
+        }
+        section .contentBX
+        {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0,51,78,1);
+            width:160%;
+            height:534px;
+        }
+        .logo
+        {
+            padding-top: 40px;
+            padding-left: 30px;
+            height: 100px;
+        }
+        .h-image
+        {
+            position: relative;
+            left: 110px;
+            top: 40px;
+        
+        }
+        
+         .v6_1 {
+            width: 368px;
+            color: rgba(0,0,0,1);
+            position: absolute;
+            top: 530px;
+            left: 183px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: Bold;
+            font-size: 25px;
+            opacity: 1;
+            text-align: left;
+          }
+          .v6_2 {
+            width: 333px;
+            color: rgba(95,93,93,1);
+            position: absolute;
+            top: 565px;
+            left: 200px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: Regular;
+            font-size: 14px;
+            opacity: 1;
+            text-align: left;
+          }
+          .login_form
+          {
+              position: relative;
+              width: 150%;
+              height: 100%;
+              box-sizing: border-box;
+              background :white;
+              box-shadow: -20px 0 15px rgba(0,0,0,.2);
+          }
+          .login_form input
+         {
+             position: relative;
+             top: 160px;
+             left: 185px;
+             display: block;
+             width: 40%;
+             padding: 10px;
+             margin-bottom: 40px;
+             box-sizing: border-box;
+             border: 2px solid #ccc;
+             border-radius: 10px;
+             outline: none;
+             font-size: 15px;
+             text-align: center;
+             border-color:rgba(0,51,78,1); 
+        }
+         .login_form input:hover,
+         .login_form input:valid
+         {
+             border: 2px solid rgba(0,51,78,1);
+         }
+         .login_form input[type="submit"]
+         {
+             color: #fff;
+             background :rgba(0,51,78,1);
+             
+             font-size: 16px;
+             transition: .5s;
+         }
+         .login_form input[type="submit"]:hover
+         {
+            
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             background: rgba(0, 51, 78, 0.726);
+             border: 3px solid rgba(0, 51, 78, 0.726) ;
+         }
+         .h-image1{
+            padding-top: 30px;
+            padding-left: 250px;
+        }
+        .v6_3{
+            width: 249px;
+            color: rgba(0,51,78,1);
+            position: absolute;
+            top: 220px;
+            left: 195px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif,Bold;
+            font-weight: Medium;
+            font-size: 22px;
+            opacity: 1;
+            text-align: left;
+          }
+        .v6_4 {
+            width: 360px;
+            color: rgba(102,102,102,1);
+            position: absolute;
+            top: 254px;
+            left: 197px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: Bold;
+            font-size: 14px;
+            text-align: left;
+          }
+           #un
+          {
+             position: absolute;
+             top: 310px;
+             left: 195px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+          } 
+          #username
+          {
+             position: absolute;
+             top: 340px;
+             left: 195px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          
+          #ps
+          {
+             position: absolute;
+             top: 390px;
+             left: 195px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+          } 
+          #password
+          {
+             position: absolute;
+             top: 420px;
+             left: 195px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          .v6_7 
+          {
+            width: 390px;
+            color: rgba(0,51,78,1);
+            position: absolute;
+            top: 580px;
+            left: 150px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: Medium;
+            text-align: left;
+            font-size: 12px;
+            opacity: 1;
+        }
+        .v6_8 {
+            width: 144px;
+            position: absolute;
+            top: 518px;
+            left: 200px;
+            font-family: Roboto;
+            font-weight: Regular;
+            font-size: 18px;
+            opacity: 1;
+            text-align: left;
+          }
+        #submit
+        {
+          position: relative;
+          top: 260px;
+          left: 195px;
+          border: none;
+          width: 40%;
+          padding: 10px;
+          margin-bottom: 50px;
+          color: #E8D86E;
+          background-color: rgba(0,51,78,1);
+          padding: 10px;
+          text-align: center;
+          border-radius: 10px;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+
+        }
+ 
+  
+
+
+.button1 {
+  background-color:rgba(0,51,78,1); 
+  color: #fff; 
+  border: 2px solid rgba(0,51,78,1);
+  text-decoration: none;
+}
+
+.button1:hover {
+  background-color: rgba(28, 93, 128, 0.945);
+  color: white;
+}
+
+        #curve
+        {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            max-height: 500px;
+        }
+        #curve path
+        {
+            fill: #fff;
+        }
+        h3 {
+          display: block;
+          font-size: 1.17em;
+          margin-block-start: 1.5em;
+          margin-block-end: 0em;
+          margin-inline-start: 198px;
+          margin-inline-end: 200px;
+          font-weight: bold;
+          background-color: rgba(133, 202, 240, 0.945);
+          text-align: center;
+          color: rgb(184, 17, 11);
+      }
+</style>
+</head>
+<body>
+    <section>
+        <div class="contentBX">
+              <div class="logo">
+                <img src = "{% static 'devlearnlogo.png' %}" width="150" height="80">
+              </div>
+             <svg id ="curve" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0099ff" fill-opacity="1" d="M0,128L60,144C120,160,240,192,360,186.7C480,181,600,139,720,106.7C840,75,960,53,1080,58.7C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+              </svg>
+          
+              <div class="h-image">
+                <img src = "{% static 'centreimg.png' %}" style="width: 450px; height: 260px";>
+             </div>
+         
+             <div>
+                <span class="v6_1">Welcome To Develearn</span>
+                <span class="v6_2">One-step solution for all HR needs</span>
+             </div>
+      
+        </div>
+        <div class="login_form">
+             <div class="h-image1">
+                <img src = "{% static 'cuklogo.png' %}" style="width: 140px;height: 140px;">
+             </div>
+                <span class="v6_3">Welcome Back!</span>
+                 <span class="v6_4">Login to access your account</span>
+                <div class="formBx">
+                  <form action="login" method="post">
+                    {% csrf_token %}
+            
+                     <label for="uname" id="un">Login ID</label>
+                     <input type="text" name="username" required="" placeholder="12345678QWERTY" id="username"><br/>
+                     <label for="upass" id="ps">Password</label>
+                     <input type="password" name="password" required="" placeholder="12345678QWERTY" id="password"><br/>
+                     <button type="submit" value="Login"  id="submit" >Login</button>
+                     
+                     <span class="v6_8"><a href = "#" style="text-decoration: none; color:#007FBD ;"> Forgot Password ?</a> </span>
+                
+                </form>
+               
+                </div>
+                <span class="v6_7">By continuing you agree to Devlearn's <a href="#" style="text-decoration: none; color:#007FBD ;">T & C </a>and <a href="#" style="text-decoration: none; color:#007FBD ;">Privacy policy</a></span>
+              </div>
+         </div>
+    </section>
+</body>
+</html>
